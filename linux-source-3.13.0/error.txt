@@ -1,0 +1,233 @@
+  CC      partie3/syscall2_log710.o
+In file included from partie3/syscall2_log710.c:2:0:
+include/linux/syscalls.h:853:43: warning: ‘struct procdata’ declared inside parameter list [enabled by default]
+ asmlinkage long sys_log710a2017as2(struct procdata *pudata);
+                                           ^
+include/linux/syscalls.h:853:43: warning: its scope is only this definition or declaration, which is probably not what you want [enabled by default]
+In file included from partie3/syscall2_log710.c:6:0:
+include/asm-generic/uaccess.h:41:0: warning: "access_ok" redefined [enabled by default]
+ #define access_ok(type, addr, size) __access_ok((unsigned long)(addr),(size))
+ ^
+In file included from include/linux/poll.h:11:0,
+                 from include/linux/ring_buffer.h:7,
+                 from include/linux/ftrace_event.h:4,
+                 from include/trace/syscall.h:6,
+                 from include/linux/syscalls.h:79,
+                 from partie3/syscall2_log710.c:2:
+/home/vagrant/linux-source-3.13.0/arch/x86/include/asm/uaccess.h:80:0: note: this is the location of the previous definition
+ #define access_ok(type, addr, size) \
+ ^
+In file included from partie3/syscall2_log710.c:6:0:
+include/asm-generic/uaccess.h:67:8: error: redefinition of ‘struct exception_table_entry’
+ struct exception_table_entry
+        ^
+In file included from include/linux/poll.h:11:0,
+                 from include/linux/ring_buffer.h:7,
+                 from include/linux/ftrace_event.h:4,
+                 from include/trace/syscall.h:6,
+                 from include/linux/syscalls.h:79,
+                 from partie3/syscall2_log710.c:2:
+/home/vagrant/linux-source-3.13.0/arch/x86/include/asm/uaccess.h:97:8: note: originally defined here
+ struct exception_table_entry {
+        ^
+In file included from partie3/syscall2_log710.c:6:0:
+include/asm-generic/uaccess.h:79:33: error: conflicting types for ‘__copy_from_user’
+ static inline __must_check long __copy_from_user(void *to,
+                                 ^
+In file included from /home/vagrant/linux-source-3.13.0/arch/x86/include/asm/uaccess.h:544:0,
+                 from include/linux/poll.h:11,
+                 from include/linux/ring_buffer.h:7,
+                 from include/linux/ftrace_event.h:4,
+                 from include/trace/syscall.h:6,
+                 from include/linux/syscalls.h:79,
+                 from partie3/syscall2_log710.c:2:
+/home/vagrant/linux-source-3.13.0/arch/x86/include/asm/uaccess_32.h:137:1: note: previous definition of ‘__copy_from_user’ was here
+ __copy_from_user(void *to, const void __user *from, unsigned long n)
+ ^
+In file included from partie3/syscall2_log710.c:6:0:
+include/asm-generic/uaccess.h:109:33: error: conflicting types for ‘__copy_to_user’
+ static inline __must_check long __copy_to_user(void __user *to,
+                                 ^
+In file included from /home/vagrant/linux-source-3.13.0/arch/x86/include/asm/uaccess.h:544:0,
+                 from include/linux/poll.h:11,
+                 from include/linux/ring_buffer.h:7,
+                 from include/linux/ftrace_event.h:4,
+                 from include/trace/syscall.h:6,
+                 from include/linux/syscalls.h:79,
+                 from partie3/syscall2_log710.c:2:
+/home/vagrant/linux-source-3.13.0/arch/x86/include/asm/uaccess_32.h:82:1: note: previous definition of ‘__copy_to_user’ was here
+ __copy_to_user(void __user *to, const void *from, unsigned long n)
+ ^
+In file included from partie3/syscall2_log710.c:6:0:
+include/asm-generic/uaccess.h:144:0: warning: "__put_user" redefined [enabled by default]
+ #define __put_user(x, ptr) \
+ ^
+In file included from include/linux/poll.h:11:0,
+                 from include/linux/ring_buffer.h:7,
+                 from include/linux/ftrace_event.h:4,
+                 from include/trace/syscall.h:6,
+                 from include/linux/syscalls.h:79,
+                 from partie3/syscall2_log710.c:2:
+/home/vagrant/linux-source-3.13.0/arch/x86/include/asm/uaccess.h:493:0: note: this is the location of the previous definition
+ #define __put_user(x, ptr)      \
+ ^
+In file included from partie3/syscall2_log710.c:6:0:
+include/asm-generic/uaccess.h:164:0: warning: "put_user" redefined [enabled by default]
+ #define put_user(x, ptr)     \
+ ^
+In file included from include/linux/poll.h:11:0,
+                 from include/linux/ring_buffer.h:7,
+                 from include/linux/ftrace_event.h:4,
+                 from include/trace/syscall.h:6,
+                 from include/linux/syscalls.h:79,
+                 from partie3/syscall2_log710.c:2:
+/home/vagrant/linux-source-3.13.0/arch/x86/include/asm/uaccess.h:246:0: note: this is the location of the previous definition
+ #define put_user(x, ptr)     \
+ ^
+In file included from partie3/syscall2_log710.c:6:0:
+include/asm-generic/uaccess.h:184:12: error: conflicting types for ‘__put_user_bad’
+ extern int __put_user_bad(void) __attribute__((noreturn));
+            ^
+In file included from include/linux/poll.h:11:0,
+                 from include/linux/ring_buffer.h:7,
+                 from include/linux/ftrace_event.h:4,
+                 from include/trace/syscall.h:6,
+                 from include/linux/syscalls.h:79,
+                 from partie3/syscall2_log710.c:2:
+/home/vagrant/linux-source-3.13.0/arch/x86/include/asm/uaccess.h:219:13: note: previous declaration of ‘__put_user_bad’ was here
+ extern void __put_user_bad(void);
+             ^
+In file included from partie3/syscall2_log710.c:6:0:
+include/asm-generic/uaccess.h:186:0: warning: "__get_user" redefined [enabled by default]
+ #define __get_user(x, ptr)     \
+ ^
+In file included from include/linux/poll.h:11:0,
+                 from include/linux/ring_buffer.h:7,
+                 from include/linux/ftrace_event.h:4,
+                 from include/trace/syscall.h:6,
+                 from include/linux/syscalls.h:79,
+                 from partie3/syscall2_log710.c:2:
+/home/vagrant/linux-source-3.13.0/arch/x86/include/asm/uaccess.h:470:0: note: this is the location of the previous definition
+ #define __get_user(x, ptr)      \
+ ^
+In file included from partie3/syscall2_log710.c:6:0:
+include/asm-generic/uaccess.h:226:0: warning: "get_user" redefined [enabled by default]
+ #define get_user(x, ptr)     \
+ ^
+In file included from include/linux/poll.h:11:0,
+                 from include/linux/ring_buffer.h:7,
+                 from include/linux/ftrace_event.h:4,
+                 from include/trace/syscall.h:6,
+                 from include/linux/syscalls.h:79,
+                 from partie3/syscall2_log710.c:2:
+/home/vagrant/linux-source-3.13.0/arch/x86/include/asm/uaccess.h:165:0: note: this is the location of the previous definition
+ #define get_user(x, ptr)      \
+ ^
+In file included from partie3/syscall2_log710.c:6:0:
+include/asm-generic/uaccess.h:255:20: error: conflicting types for ‘copy_from_user’
+ static inline long copy_from_user(void *to,
+                    ^
+In file included from include/linux/poll.h:11:0,
+                 from include/linux/ring_buffer.h:7,
+                 from include/linux/ftrace_event.h:4,
+                 from include/trace/syscall.h:6,
+                 from include/linux/syscalls.h:79,
+                 from partie3/syscall2_log710.c:2:
+/home/vagrant/linux-source-3.13.0/arch/x86/include/asm/uaccess.h:592:1: note: previous definition of ‘copy_from_user’ was here
+ copy_from_user(void *to, const void __user *from, unsigned long n)
+ ^
+In file included from partie3/syscall2_log710.c:6:0:
+include/asm-generic/uaccess.h:265:20: error: conflicting types for ‘copy_to_user’
+ static inline long copy_to_user(void __user *to,
+                    ^
+In file included from include/linux/poll.h:11:0,
+                 from include/linux/ring_buffer.h:7,
+                 from include/linux/ftrace_event.h:4,
+                 from include/trace/syscall.h:6,
+                 from include/linux/syscalls.h:79,
+                 from partie3/syscall2_log710.c:2:
+/home/vagrant/linux-source-3.13.0/arch/x86/include/asm/uaccess.h:627:1: note: previous definition of ‘copy_to_user’ was here
+ copy_to_user(void __user *to, const void *from, unsigned long n)
+ ^
+In file included from partie3/syscall2_log710.c:6:0:
+include/asm-generic/uaccess.h:291:1: error: static declaration of ‘strncpy_from_user’ follows non-static declaration
+ strncpy_from_user(char *dst, const char __user *src, long count)
+ ^
+In file included from include/linux/poll.h:11:0,
+                 from include/linux/ring_buffer.h:7,
+                 from include/linux/ftrace_event.h:4,
+                 from include/trace/syscall.h:6,
+                 from include/linux/syscalls.h:79,
+                 from partie3/syscall2_log710.c:2:
+/home/vagrant/linux-source-3.13.0/arch/x86/include/asm/uaccess.h:524:1: note: previous declaration of ‘strncpy_from_user’ was here
+ strncpy_from_user(char *dst, const char __user *src, long count);
+ ^
+In file included from partie3/syscall2_log710.c:6:0:
+include/asm-generic/uaccess.h:312:20: error: static declaration of ‘strnlen_user’ follows non-static declaration
+ static inline long strnlen_user(const char __user *src, long n)
+                    ^
+In file included from include/linux/poll.h:11:0,
+                 from include/linux/ring_buffer.h:7,
+                 from include/linux/ftrace_event.h:4,
+                 from include/trace/syscall.h:6,
+                 from include/linux/syscalls.h:79,
+                 from partie3/syscall2_log710.c:2:
+/home/vagrant/linux-source-3.13.0/arch/x86/include/asm/uaccess.h:527:26: note: previous declaration of ‘strnlen_user’ was here
+ extern __must_check long strnlen_user(const char __user *str, long n);
+                          ^
+In file included from partie3/syscall2_log710.c:6:0:
+include/asm-generic/uaccess.h:319:20: error: static declaration of ‘strlen_user’ follows non-static declaration
+ static inline long strlen_user(const char __user *src)
+                    ^
+In file included from include/linux/poll.h:11:0,
+                 from include/linux/ring_buffer.h:7,
+                 from include/linux/ftrace_event.h:4,
+                 from include/trace/syscall.h:6,
+                 from include/linux/syscalls.h:79,
+                 from partie3/syscall2_log710.c:2:
+/home/vagrant/linux-source-3.13.0/arch/x86/include/asm/uaccess.h:526:26: note: previous declaration of ‘strlen_user’ was here
+ extern __must_check long strlen_user(const char __user *str);
+                          ^
+In file included from partie3/syscall2_log710.c:6:0:
+include/asm-generic/uaccess.h:329:1: error: static declaration of ‘__clear_user’ follows non-static declaration
+ __clear_user(void __user *to, unsigned long n)
+ ^
+In file included from include/linux/poll.h:11:0,
+                 from include/linux/ring_buffer.h:7,
+                 from include/linux/ftrace_event.h:4,
+                 from include/trace/syscall.h:6,
+                 from include/linux/syscalls.h:79,
+                 from partie3/syscall2_log710.c:2:
+/home/vagrant/linux-source-3.13.0/arch/x86/include/asm/uaccess.h:530:28: note: previous declaration of ‘__clear_user’ was here
+ unsigned long __must_check __clear_user(void __user *mem, unsigned long len);
+                            ^
+In file included from partie3/syscall2_log710.c:6:0:
+include/asm-generic/uaccess.h:337:1: error: static declaration of ‘clear_user’ follows non-static declaration
+ clear_user(void __user *to, unsigned long n)
+ ^
+In file included from include/linux/poll.h:11:0,
+                 from include/linux/ring_buffer.h:7,
+                 from include/linux/ftrace_event.h:4,
+                 from include/trace/syscall.h:6,
+                 from include/linux/syscalls.h:79,
+                 from partie3/syscall2_log710.c:2:
+/home/vagrant/linux-source-3.13.0/arch/x86/include/asm/uaccess.h:529:28: note: previous declaration of ‘clear_user’ was here
+ unsigned long __must_check clear_user(void __user *mem, unsigned long len);
+                            ^
+partie3/syscall2_log710.c:11:43: warning: ‘struct procdata’ declared inside parameter list [enabled by default]
+ asmlinkage long sys_log710a2017as2(struct procdata *pudata) {
+                                           ^
+partie3/syscall2_log710.c:11:17: error: conflicting types for ‘sys_log710a2017as2’
+ asmlinkage long sys_log710a2017as2(struct procdata *pudata) {
+                 ^
+In file included from partie3/syscall2_log710.c:2:0:
+include/linux/syscalls.h:853:17: note: previous declaration of ‘sys_log710a2017as2’ was here
+ asmlinkage long sys_log710a2017as2(struct procdata *pudata);
+                 ^
+partie3/syscall2_log710.c: In function ‘sys_log710a2017as2’:
+partie3/syscall2_log710.c:12:18: error: storage size of ‘kdata’ isn’t known
+  struct procdata kdata;
+                  ^
+partie3/syscall2_log710.c:12:18: warning: unused variable ‘kdata’ [-Wunused-variable]
+make[1]: *** [partie3/syscall2_log710.o] Error 1
+make: *** [_module_partie3] Error 2
